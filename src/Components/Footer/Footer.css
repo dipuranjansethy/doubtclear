@@ -1,0 +1,135 @@
+.site-footer {
+    background-color: #f8f0ff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    width: 100%;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 160px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-column:last-child {
+    margin-right: 0;
+  }
+  
+  .logo-column {
+    min-width: 120px;
+    flex: 0.7;
+  }
+  
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo-square {
+    width: 20px;
+    height: 20px;
+    background-color: #7c4dff;
+    border-radius: 4px;
+    margin-right: 8px;
+  }
+  
+  .logo-text {
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icon {
+    text-decoration: none;
+  }
+  
+  .icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #7c4dff;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .twitter .icon-circle {
+    background-color: #e0e0e0;
+    color: #333;
+  }
+  
+  .footer-column h3 {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #7c4dff;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+    }
+    
+    .footer-column {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+    
+    .logo-column {
+      order: -1; /* Put logo at the top on mobile */
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .footer-column {
+      flex: 0 0 calc(33.33% - 20px);
+      margin-bottom: 30px;
+    }
+    
+    .logo-column {
+      flex: 0 0 100%;
+      margin-bottom: 30px;
+    }
+  }
