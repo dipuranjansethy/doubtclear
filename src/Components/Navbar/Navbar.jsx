@@ -49,7 +49,7 @@ const Navbar = () => {
 
     const categoryMapping = {
       'kindergarten': 'kindergarten',
-      'primaryschool': 'kindergarten',
+      'primaryschool': 'primaryschool',
       'highschool': 'highschool',
       'college': 'college'
     };
