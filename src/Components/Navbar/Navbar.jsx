@@ -191,7 +191,7 @@ const Navbar = () => {
           </li>
           
           <li>
-            <a href="/previous_questions" onClick={closeMobileMenu}>Shop</a>
+            <a href="/previous_questions" onClick={closeMobileMenu}>PYQ's</a>
           </li>
         </ul>
       </div>
