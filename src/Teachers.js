@@ -7,6 +7,9 @@ const Teachers = [
     rating: 4.8,
     distance: 3.2, // Distance in miles
     image: "https://randomuser.me/api/portraits/women/22.jpg",
+    tenthPercentage: 92.5,
+    twelfthPercentage: 94.8,
+    locality: "Infocity Square, Patia, Bhubaneswar, Odisha 751024",
     reviews: [
       { id: "R001", studentId: "S137", comment: "Exceptional explanations for complex topics", rating: 5 },
       { id: "R002", studentId: "S254", comment: "Very patient and thorough", rating: 5 },
@@ -33,6 +36,9 @@ const Teachers = [
     rating: 4.9,
     distance: 5.7, // Distance in miles
     image: "https://randomuser.me/api/portraits/men/34.jpg",
+    tenthPercentage: 95.4,
+    twelfthPercentage: 97.2,
+    locality: "Chandrasekharpur Housing Colony, Bhubaneswar, Odisha 751016",
     reviews: [
       { id: "R004", studentId: "S098", comment: "Best physics teacher I've ever had", rating: 5 },
       { id: "R005", studentId: "S127", comment: "Makes quantum physics understandable", rating: 5 },
@@ -59,6 +65,9 @@ const Teachers = [
     rating: 4.7,
     distance: 1.8, // Distance in miles
     image: "https://randomuser.me/api/portraits/women/45.jpg",
+    tenthPercentage: 91.8,
+    twelfthPercentage: 90.5,
+    locality: "Shreekhetra Vihar, Khandagiri, Bhubaneswar, Odisha 752054",
     reviews: [
       { id: "R007", studentId: "S045", comment: "Fantastic at teaching literature analysis", rating: 5 },
       { id: "R008", studentId: "S162", comment: "Very engaging and inspiring", rating: 5 },
@@ -85,6 +94,9 @@ const Teachers = [
     rating: 4.6,
     distance: 7.2, // Distance in miles
     image: "https://randomuser.me/api/portraits/men/52.jpg",
+    tenthPercentage: 89.2,
+    twelfthPercentage: 92.7,
+    locality: "Sampark Vihar - Lane 2, KIIT Rd, Patia, Bhubaneswar, Odisha 751024",
     reviews: [
       { id: "R010", studentId: "S176", comment: "Incredible depth of historical knowledge", rating: 5 },
       { id: "R011", studentId: "S088", comment: "Brings history to life with great storytelling", rating: 5 },
@@ -111,6 +123,9 @@ const Teachers = [
     rating: 4.5,
     distance: 2.9, // Distance in miles
     image: "https://randomuser.me/api/portraits/men/29.jpg",
+    tenthPercentage: 88.7,
+    twelfthPercentage: 91.3,
+    locality: "Sailashree Vihar, Chandrasekharpur, Bhubaneswar, Odisha 751021",
     reviews: [
       { id: "R013", studentId: "S201", comment: "Makes programming fun and accessible", rating: 5 },
       { id: "R014", studentId: "S067", comment: "Very patient with beginners", rating: 5 },
@@ -137,6 +152,9 @@ const Teachers = [
     rating: 4.9,
     distance: 4.5, // Distance in miles
     image: "https://randomuser.me/api/portraits/women/67.jpg",
+    tenthPercentage: 94.6,
+    twelfthPercentage: 96.8,
+    locality: "Nandankanan Road, Raghunathpur, Bhubaneswar, Odisha 751030",
     reviews: [
       { id: "R016", studentId: "S078", comment: "Exceptional teaching of organic chemistry", rating: 5 },
       { id: "R017", studentId: "S092", comment: "Makes complex concepts simple to understand", rating: 5 },
@@ -163,6 +181,9 @@ const Teachers = [
     rating: 4.7,
     distance: 6.1, // Distance in miles
     image: "https://randomuser.me/api/portraits/women/39.jpg",
+    tenthPercentage: 93.1,
+    twelfthPercentage: 91.9,
+    locality: "Kalinga Vihar, Patrapada, Bhubaneswar, Odisha 751019",
     reviews: [
       { id: "R019", studentId: "S156", comment: "Excellent French teacher for beginners", rating: 5 },
       { id: "R020", studentId: "S073", comment: "Makes learning a new language fun", rating: 5 },
@@ -189,6 +210,9 @@ const Teachers = [
     rating: 4.8,
     distance: 8.3, // Distance in miles
     image: "https://randomuser.me/api/portraits/men/76.jpg",
+    tenthPercentage: 96.2,
+    twelfthPercentage: 98.1,
+    locality: "Forest Park, Khandagiri, Bhubaneswar, Odisha 751030",
     reviews: [
       { id: "R022", studentId: "S102", comment: "Profound insights into economic theory", rating: 5 },
       { id: "R023", studentId: "S187", comment: "Explains complex economic concepts clearly", rating: 5 },
@@ -215,6 +239,9 @@ const Teachers = [
     rating: 4.6,
     distance: 3.7, // Distance in miles
     image: "https://randomuser.me/api/portraits/women/55.jpg",
+    tenthPercentage: 90.7,
+    twelfthPercentage: 89.8,
+    locality: "Jagamara, Near OUAT Campus, Bhubaneswar, Odisha 751003",
     reviews: [
       { id: "R025", studentId: "S091", comment: "Fantastic art teacher for all skill levels", rating: 5 },
       { id: "R026", studentId: "S143", comment: "Very encouraging and insightful feedback", rating: 5 },
@@ -241,6 +268,9 @@ const Teachers = [
     rating: 4.9,
     distance: 5.0, // Distance in miles
     image: "https://randomuser.me/api/portraits/men/81.jpg",
+    tenthPercentage: 97.5,
+    twelfthPercentage: 99.2,
+    locality: "Gajapati Nagar, Chandrasekharpur, Bhubaneswar, Odisha 751017",
     reviews: [
       { id: "R028", studentId: "S114", comment: "Extraordinary teacher for biological sciences", rating: 5 },
       { id: "R029", studentId: "S195", comment: "Makes molecular biology fascinating and accessible", rating: 5 },

@@ -89,50 +89,71 @@ const TeacherProfile = () => {
           <div style={{
             flex: 1,
             display: 'flex',
-            flexDirection: 'row',
-            alignItems: 'center',
+            flexDirection: 'column',
+            alignItems: 'flex-start',
             justifyContent: 'space-between'
           }}>
-            <div>
-              <h1 style={{
-                margin: 0,
-                fontSize: '24px',
-                fontWeight: 'bold',
-                color: '#4a235a'
-              }}>{teacher.name}</h1>
-              <p style={{
-                margin: '4px 0 0 0',
-                fontSize: '14px',
-                color: '#666'
-              }}>{teacher.subjects.join(', ')}</p>
-              <div style={{ 
-                display: 'flex',
-                alignItems: 'center',
-                marginTop: '4px',
-                fontSize: '14px',
-                color: '#666'
-              }}>
-                <span style={{ color: '#f9ca24', marginRight: '4px' }}>★</span>
-                <span>{teacher.rating}</span>
-                <span style={{ margin: '0 4px' }}>•</span>
-                <span>{teacher.reviews.length} reviews</span>
-                <span style={{ margin: '0 4px' }}>•</span>
-                <span>{teacher.proficiency} level</span>
+            <div style={{
+              display: 'flex',
+              width: '100%',
+              justifyContent: 'space-between',
+              alignItems: 'flex-start'
+            }}>
+              <div>
+                <h1 style={{
+                  margin: 0,
+                  fontSize: '24px',
+                  fontWeight: 'bold',
+                  color: '#4a235a'
+                }}>{teacher.name}</h1>
+                <p style={{
+                  margin: '4px 0 0 0',
+                  fontSize: '14px',
+                  color: '#666'
+                }}>{teacher.subjects.join(', ')}</p>
+                <div style={{ 
+                  display: 'flex',
+                  alignItems: 'center',
+                  marginTop: '4px',
+                  fontSize: '14px',
+                  color: '#666'
+                }}>
+                  <span style={{ color: '#f9ca24', marginRight: '4px' }}>★</span>
+                  <span>{teacher.rating}</span>
+                  <span style={{ margin: '0 4px' }}>•</span>
+                  <span>{teacher.reviews.length} reviews</span>
+                  <span style={{ margin: '0 4px' }}>•</span>
+                  <span>{teacher.proficiency} level</span>
+                </div>
               </div>
+              <button style={{
+                backgroundColor: '#6b46c1',
+                color: 'white',
+                border: 'none',
+                padding: '8px 24px',
+                borderRadius: '4px',
+                cursor: 'pointer',
+                transition: 'background-color 0.3s'
+              }}
+              onMouseOver={(e) => e.target.style.backgroundColor = '#5a37a8'}
+              onMouseOut={(e) => e.target.style.backgroundColor = '#6b46c1'}>
+                Contact Now
+              </button>
             </div>
-            <button style={{
-              backgroundColor: '#6b46c1',
-              color: 'white',
-              border: 'none',
-              padding: '8px 24px',
-              borderRadius: '4px',
-              cursor: 'pointer',
-              transition: 'background-color 0.3s'
-            }}
-            onMouseOver={(e) => e.target.style.backgroundColor = '#5a37a8'}
-            onMouseOut={(e) => e.target.style.backgroundColor = '#6b46c1'}>
-              Contact Now
-            </button>
+            
+            {/* Locality Information */}
+            {teacher.locality && (
+              <div style={{
+                marginTop: '8px',
+                fontSize: '14px',
+                color: '#666',
+                display: 'flex',
+                alignItems: 'center'
+              }}>
+                <span style={{ marginRight: '4px' }}>📍</span>
+                <span>{teacher.locality}</span>
+              </div>
+            )}
           </div>
         </div>
 
@@ -229,6 +250,43 @@ const TeacherProfile = () => {
                 }}>
                   {teacher.about}
                 </p>
+                
+                <h3 style={{
+                  fontSize: '18px',
+                  fontWeight: 'bold',
+                  color: '#4a235a',
+                  marginTop: '24px',
+                  marginBottom: '12px'
+                }}>Academic Performance</h3>
+                <div style={{
+                  backgroundColor: 'white',
+                  padding: '16px',
+                  borderRadius: '8px',
+                  marginBottom: '16px'
+                }}>
+                  {teacher.tenthPercentage && (
+                    <div style={{
+                      display: 'flex',
+                      justifyContent: 'space-between',
+                      padding: '8px 0',
+                      borderBottom: '1px solid #eee'
+                    }}>
+                      <span style={{ color: '#666' }}>Class 10th Percentage</span>
+                      <span style={{ fontWeight: '500', color: '#4a235a' }}>{teacher.tenthPercentage}%</span>
+                    </div>
+                  )}
+                  
+                  {teacher.twelfthPercentage && (
+                    <div style={{
+                      display: 'flex',
+                      justifyContent: 'space-between',
+                      padding: '8px 0'
+                    }}>
+                      <span style={{ color: '#666' }}>Class 12th Percentage</span>
+                      <span style={{ fontWeight: '500', color: '#4a235a' }}>{teacher.twelfthPercentage}%</span>
+                    </div>
+                  )}
+                </div>
                 
                 <h3 style={{
                   fontSize: '18px',
