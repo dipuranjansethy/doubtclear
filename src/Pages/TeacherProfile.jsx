@@ -528,6 +528,15 @@ const TeacherProfile = () => {
               padding: '8px 0',
               borderBottom: '1px solid #eee'
             }}>
+              <span style={{ color: '#666' }}>Distance</span>
+              <span style={{ fontWeight: '500', color: '#4a235a' }}>{teacher.distance}km</span>
+            </div>
+            <div style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              padding: '8px 0',
+              borderBottom: '1px solid #eee'
+            }}>
               <span style={{ color: '#666' }}>Subjects</span>
               <span style={{ fontWeight: '500', color: '#4a235a' }}>{teacher.subjects.length}</span>
             </div>
